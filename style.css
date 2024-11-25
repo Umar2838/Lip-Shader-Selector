@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+    .top-header {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        gap: 20px;
+        background-color: #4b4646;
+        padding: 10px 0px;
+      }
+      
+      .top-header > h1 {
+        margin: 0; /* Remove default margin */
+        color: rgb(211, 61, 86); /* Set the text color */
+        text-align: center; /* Center text */
+      }
+      
+      .top-header div {
+        width: 40px; /* Circle width */
+        height: 40px; /* Circle height */
+        border-radius: 50%; /* Makes the div circular */
+        border: 3px solid #000; /* Add a border to each circle */
+      }
+      
+      /* Add different lipstick shades to each circle */
+      .round1 {
+        background-color: #FF6F61; /* Shade 1 */
+      }
+      
+      .round2 {
+        background-color: #E63946; /* Shade 2 */
+      }
+      
+      .round3 {
+        background-color: #C2185B; /* Shade 3 */
+      }
+      
+      .round4 {
+        background-color: #8E44AD; /* Shade 4 */
+      }
+      
+      .round5 {
+        background-color: #F06292; /* Shade 5 */
+      }
+      
+      .round6 {
+        background-color: #E91E63; /* Shade 6 */
+      }
+      
