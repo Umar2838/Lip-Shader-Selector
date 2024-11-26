@@ -4,9 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shade Finder</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
     <link href="./style.css" rel="stylesheet" />
   </head>
   <body>
+    <!----------------------------------------HEADER----------------------------------->
     <div class="top-header">
       <div class="round1"></div>
       <div class="round2"></div>
@@ -17,5 +23,67 @@
       <div class="round5"></div>
       <div class="round6"></div>
     </div>
+    <div class="headerdefine" style="margin-top: 20px;" >
+      <div class="text" >Virtual Lipstick Try On | Lipstick Shades Finder</div>
+    </div>
+
+    <!----------------------------------------Shade detection screen----------------------------------->
+
+    <div class="shadedetector" >
+
+    </div>
+
+    <!----------------------------------------------- FOOTER ------------------------------------------------>
+    <div class="shadetype">
+      <div class="btnwrapper">
+        <button class="btnclass">Matte</button>
+        <button class="btnclass">Metallic</button>
+      </div>
+    </div>
+    
+    <div class="shadeselectordiv">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide shade1"></div>
+          <div class="swiper-slide shade2"></div>
+          <div class="swiper-slide shade3"></div>
+          <div class="swiper-slide shade4"></div>
+          <div class="swiper-slide shade5"></div>
+          <div class="swiper-slide shade6"></div>
+          <div class="swiper-slide shade1"></div>
+          <div class="swiper-slide shade2"></div>
+          <div class="swiper-slide shade3"></div>
+          <div class="swiper-slide shade4"></div>
+          <div class="swiper-slide shade5"></div>
+          <div class="swiper-slide shade6"></div>
+          <div class="swiper-slide shade1"></div>
+          <div class="swiper-slide shade2"></div>
+          <div class="swiper-slide shade3"></div>
+        </div>
+        <!-- Add pagination and navigation if you need -->
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+  var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30, 
+  freeMode: false,
+  loop: false, 
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-prev",
+    prevEl: ".swiper-button-next", 
+  },
+});
+
+  </script>
+
 </html>

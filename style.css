@@ -1,55 +1,165 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
-    .top-header {
-        display: flex;
-        justify-content: center;
-        align-items: center; 
-        gap: 20px;
-        background-color: #4b4646;
-        padding: 10px 0px;
-      }
-      
-      .top-header > h1 {
-        margin: 0; /* Remove default margin */
-        color: rgb(211, 61, 86); /* Set the text color */
-        text-align: center; /* Center text */
-      }
-      
-      .top-header div {
-        width: 40px; /* Circle width */
-        height: 40px; /* Circle height */
-        border-radius: 50%; /* Makes the div circular */
-        border: 3px solid #000; /* Add a border to each circle */
-      }
-      
-      /* Add different lipstick shades to each circle */
-      .round1 {
-        background-color: #FF6F61; /* Shade 1 */
-      }
-      
-      .round2 {
-        background-color: #E63946; /* Shade 2 */
-      }
-      
-      .round3 {
-        background-color: #C2185B; /* Shade 3 */
-      }
-      
-      .round4 {
-        background-color: #8E44AD; /* Shade 4 */
-      }
-      
-      .round5 {
-        background-color: #F06292; /* Shade 5 */
-      }
-      
-      .round6 {
-        background-color: #E91E63; /* Shade 6 */
-      }
-      
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+/* <!----------------------------------------HEADER CSS -----------------------------------> */
+
+.top-header {
+  width: 100%; /* Make it stretch across the whole width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #323232;
+  padding: 10px 0px;
+}
+
+.top-header > h1 {
+  margin: 0; /* Remove default margin */
+  color: #fd0909; /* Set the text color */
+  text-align: center; /* Center text */
+}
+
+.top-header div {
+  width: 40px; /* Circle width */
+  height: 40px; /* Circle height */
+  border-radius: 50%; /* Makes the div circular */
+  border: 3px solid #000; /* Add a border to each circle */
+}
+
+.round1 {
+  background-color: #FF6F61; /* Shade 1 */
+}
+
+.round2 {
+  background-color: #DD2048; /* Shade 2 */
+}
+
+.round3 {
+  background-color: #B80928; /* Shade 3 */
+}
+
+.round4 {
+  background-color: #872436; /* Shade 4 */
+}
+
+.round5 {
+  background-color: #F06292; /* Shade 5 */
+}
+
+.round6 {
+  background-color: #DD2048; /* Shade 6 */
+}
+.headerdefine{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: #000;
+}
+.text{
+  font-size:24px ;
+  font-weight: 500;
+}
+
+
+/*     <!----------------------------------------FOOTER CSS-----------------------------------> */
+
+.shadetype {
+  width: 100%;
+  position: fixed;
+  bottom: 80px; 
+  background-color: #323232;
+  padding: 15px 0;
+  z-index: 1000; 
+}
+
+.btnwrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; 
+}
+
+.btnclass {
+  background-color: #EE3A77; 
+  padding: 12px 40px; 
+  border-radius: 10px; 
+  font-weight: 600;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer; 
+  transition: 0.3s ease-in-out;
+}
+
+.btnclass:hover {
+  background-color: transparent;
+  color: #EE3A77; 
+  border: 1px solid #EE3A77; 
+}
+
+.btnclass:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(238, 58, 119, 0.6); 
+}
+
+.shadeselectordiv {
+  position: fixed; 
+  bottom: 0; 
+  left: 0;
+  width: 100%;
+  background-color: #d6d6d6; 
+  height: 80px;
+  padding: 10px 40px; 
+
+}
+.swiper {
+  width: 100%;
+}
+.swiper-slide {
+  width: 60px !important;  
+  height: 60px !important; 
+  border-radius: 100%; 
+  border: 3px solid #000; 
+
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000; /* Set the color for next/prev buttons */
+  border-radius: 50%; /* Make buttons circular */
+  padding: 5px; /* Adjust the button padding */
+}
+.shade1 {
+  background-color: #FF6F61; /* Shade 1 */
+}
+
+.shade2 {
+  background-color: #DD2048; /* Shade 2 */
+}
+
+.shade3 {
+  background-color: #B80928; /* Shade 3 */
+}
+
+.shade4 {
+  background-color: #872436; /* Shade 4 */
+}
+
+.shade5 {
+  background-color: #F06292; /* Shade 5 */
+}
+
+.shade6 {
+  background-color: #DD2048; /* Shade 6 */
+}
